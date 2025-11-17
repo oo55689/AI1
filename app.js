@@ -1,6 +1,7 @@
 "use strict";
 
-class PuzzlePiece {
+class PuzzlePiece 
+{
     constructor(id, url) 
     {
         this.id = id;
@@ -41,14 +42,16 @@ class MapPuzzleApp
         this.enableNotifications();
     }
 
-    enableNotifications() {
+    enableNotifications() 
+    {
         if (Notification.permission !== "granted") 
           {
             Notification.requestPermission();
         }
     }
 
-    locate() {
+    locate() 
+    {
         navigator.geolocation.getCurrentPosition(pos => {
             const lat = pos.coords.latitude;
             const lng = pos.coords.longitude;
@@ -56,7 +59,8 @@ class MapPuzzleApp
         });
     }
 
-    makePuzzle() {
+    makePuzzle() 
+    {
         this.tray.innerHTML = "";
 
         const zoom = this.map.getZoom();
@@ -136,3 +140,4 @@ class MapPuzzleApp
 }
 
 window.onload = () => new MapPuzzleApp();
+
