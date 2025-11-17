@@ -1,0 +1,129 @@
+body 
+{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f3f4f6;
+}
+
+.topbar 
+{
+  background: #4965ff;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar h1 
+{
+  margin: 0;
+  font-size: 22px;
+}
+
+.topbar button 
+{
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.layout 
+{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.top-row 
+{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.map 
+{
+  width: 520px;
+  height: 420px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  overflow: hidden;
+}
+
+.board-wrapper h2 
+{
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.board 
+{
+  background: #1f4f7f;
+  padding: 12px;
+  border-radius: 10px;
+  border: 3px solid #0f2f5f;
+
+  width: 420px;
+  height: 420px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  grid-template-rows: repeat(4, 90px);
+  gap: 10px;
+
+  justify-content: center;
+  align-content: center;
+}
+
+.slot 
+{
+  background: rgba(255, 255, 255, 0.28);
+  border: 2px solid rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+}
+
+.tray-wrapper h2 
+{
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.tray 
+{
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 12px;
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.piece 
+{
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #666;
+  cursor: grab;
+  transition: 0.15s;
+  background: white;
+}
+
+.piece:hover 
+{
+  transform: scale(1.05);
+}
+
+.footnote 
+{
+  padding: 15px;
+  text-align: center;
+  color: #333;
+}

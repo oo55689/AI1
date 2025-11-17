@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Puzzle z Mapy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <div class="topbar">
+    <h1>Puzzle z Mapy</h1>
+    <div>
+      <button id="locBtn">Moja lokalizacja</button>
+      <button id="snapBtn">Generuj puzzle</button>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="top-row">
+      <div id="map" class="map"></div>
+
+      <div class="board-wrapper">
+        <h2>Plansza</h2>
+        <div id="board" class="board">
+          <div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+          <div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+          <div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+          <div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tray-wrapper">
+      <h2>Stół z puzzlami</h2>
+      <div id="tray" class="tray"></div>
+    </div>
+  </div>
+
+  <div class="footnote">Puzzle z mapy.</div>
+  <script src="app.js"></script>
+</body>
+</html>
