@@ -1,0 +1,119 @@
+/* TŁO */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to bottom, #0a2647, #144272, #205295, #2c74b3);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+/* GŁÓWNY BLOK */
+.container {
+    width: 90%;
+    max-width: 550px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* TYTUŁ */
+h1 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #d8e9ff;
+    font-weight: 700;
+}
+
+/* INPUT + BUTTON */
+.search-box {
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 65%;
+    border-radius: 10px;
+    border: 1px solid #4fa3ff;
+    background: rgba(255,255,255,0.2);
+    font-size: 16px;
+    color: white;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #d0e0ff;
+}
+
+.search-box button {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+    background: #4fa3ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 8px;
+}
+
+.search-box button:hover {
+    background: #2f8ae6;
+}
+
+/* KARTY POGODY */
+.weather-card {
+    background: rgba(255, 255, 255, 0.18);
+    border-left: 6px solid #4fa3ff;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.weather-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+.weather-icon {
+    width: 70px;
+}
+
+/* NAGŁÓWKI W ŚRODKU */
+h2, h3, h4 {
+    color: #d8e9ff;
+    margin: 5px 0;
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 480px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    .search-box input {
+        width: 60%;
+        font-size: 14px;
+    }
+
+    .weather-icon {
+        width: 50px;
+    }
+
+    .weather-card {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
